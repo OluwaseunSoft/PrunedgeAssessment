@@ -13,7 +13,8 @@ namespace akinwaleoluwaseun2015_gmail.com
             int[] arrival = { 900, 940, 950, 1100, 1500, 1800 };
             int[] departure = { 910, 1200, 1120, 1130, 1900, 2000 };
             int result = MinimumPlatformRequired(arrival, departure);
-            Console.WriteLine("" + result);
+            Console.WriteLine("The minimum number of platforms that are required for the train station so that none of the train waits is : " + result);
+            Console.ReadKey();
         }
 
         public static int MinimumPlatformRequired(int[] arrival, int[] departure)
