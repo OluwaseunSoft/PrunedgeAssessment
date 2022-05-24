@@ -10,7 +10,10 @@ namespace akinwaleoluwaseun2015_gmail.com
     {
         static void Main(string[] args)
         {
-
+            int[] arrival = { 900, 940, 950, 1100, 1500, 1800 };
+            int[] departure = { 910, 1200, 1120, 1130, 1900, 2000 };
+            int result = MinimumPlatformRequired(arrival, departure);
+            Console.WriteLine("" + result);
         }
 
         public static int MinimumPlatformRequired(int[] arrival, int[] departure)
@@ -24,12 +27,19 @@ namespace akinwaleoluwaseun2015_gmail.com
 
                 while (i < arrival.Length && j < arrival.Length)
                 {
-                    if(arrival[i] <= departure[j])
+                    if (arrival[i] <= departure[j])
                     {
                         platform++;
                         i++;
                     }
+                    else if (arrival[i] > departure[j])
+                    {
+                        platform--;
+                        j++;
+                    }
+                    if (platform > result) result = platform;
                 }
+                return result;
             }
             catch (Exception ex)
             {
