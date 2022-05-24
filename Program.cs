@@ -10,6 +10,19 @@ namespace akinwaleoluwaseun2015_gmail.com
     {
         static void Main(string[] args)
         {
+
+        }
+
+        public static int MinimumPlatformRequired(int[] arrival, int[] departure)
+        {
+            try
+            {
+
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
     }
 }
